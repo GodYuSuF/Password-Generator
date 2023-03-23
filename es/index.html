@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Generador de contraseñas</title>
+	<link rel="icon" href="GY-icono-web.png">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<nav class="nav">
+			<div class="logo" id="logo">
+				<img src="GY-icono-web.png" alt="GodYuSuF Icon">
+			</div>
+			<div class="idioma">
+				<span class="en" style="color: #fff;">EN</span>
+				<input type="checkbox" class="check" checked>
+				<span class="es" style="color: #16f0ab;">ES</span>
+			</div>
+			<div class="contenedor">
+				<div class="boton">
+					<button>Generar</button>
+				</div>
+				<div class="lenght">
+					<input type="range" id="myRange" min="1" max="100" step="1" value="12" class="slider"></input>
+					<p class="display-pw-size">Tamaño de la contraseña: <span id="value">12</span></p>
+				</div>
+				<div class="generator">
+					<input readonly cols="60" rows="1" placeholder="Password Generator" id="generated"></input>
+					<i class="fas fa-copy"></i>
+				</div>
+				<div class="menu">
+				<h1>Evita ser victima de un <span>hackeo</span></h1>
+				<h3><br>Si no cuentas con estas caracteristicas en tus contraseñas:</br>
+					<br>- Numeros</br>
+					<br>- Mayusculas y Minusculas</br>
+					<br>- Caracteres Especiales</br>
+					<br>- 12 o mas caracteres</br>
+					<br>La seguridad de tu cuenta es baja.</br> 
+					<br>Pero no te preocupes, con este generador, podras crear contraseñas muy seguras.</br></h3>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+    <script src="../js/script.js"></script>
+	<script src="https://kit.fontawesome.com/c8524fc5ad.js" crossorigin="anonymous"></script>
+</body>
+</html>
