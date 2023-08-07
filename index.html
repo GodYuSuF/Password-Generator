@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GodYuSuF Web</title>
+	<link rel="icon" href="GY-icono-web.png">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<script src="https://kit.fontawesome.com/c8524fc5ad.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+ <div class="wrapper">
+  <header>
+	<nav class="nav"> 
+	 <div class="brand">
+       <img src="GY-icono-web.png">
+     </div>
+     <div class="bars">
+     	<i class="fas fa-bars" id="btn-menu"></i>
+     </div>
+     <ul class="menu" id="menu">
+	   <li><a href="#Home">Home</a></li>
+	   <li><a href="#Aboutme">About Me</a></li>
+       <li><a href="#Portfolio">Portfolio</a></li>
+       <li><a href="#Contact">Contact</a></li>
+     </ul>
+    </nav>
+  </header>
+  <div class="scroll"></div>
+  <div class="home" id="Home">
+  <div class="imagen">
+     <img src="programador img.webp" alt="Programacion">
+  </div>
+  <main class="main">
+     <div class="info-content" id="back_menu">
+       <h1>Hello. I'm <span>Agustín </span>Lorenzana.</h1>
+       <h3>I'm full-stack developer and this is my personal web.</h3>
+       <a download href="Curriculum Agustin Lorenzana.jpg" target="_BLANK">
+         <button class="download-cv" download="Curriculum Agustín Lorenzana.jpg">Download CV</button>
+       </a>
+    </div> 
+  </main>
+  </div>
+ </div>
+
+   <div class="item" id="Aboutme">
+    <div class="about">
+	  <img src="perfil.png" alt="Agustín Lorenzana retrato">
+      <div class="about-info">
+ 	    <h2>About <span>Me</span></h2>
+ 	   <div class="divider"></div>
+ 	    <h3>I live in Argentina, Buenos Aires. Since I was little, I have always been interested in the code and everything related to computers. I have good communication skills, I am willing to work as a team and help my colleagues in whatever they need.</h3>
+      <h3 style="display: none; opacity: 0; transition: opacity 0.5s ease;" id="textHide">I have done code testing projects with teammates, therefore I am experienced in this area. I practiced and carried out tests with HTML, CSS & JAVASCRIPT to understand these languages in a logical way and surprise my family and friends with my effort, dedication and my technical skills in this technological world. You can see in the "My portfolio" section the projects carried out on my own.</h3>
+ 	   <button class="read-more">Read More</button>
+      </div>
+    </div>
+   </div>
+ 
+    <div class="item" id="Portfolio">
+     <div class="portfolio">
+  	  <div class="portfolio-headings">
+  	  <h2>My <span>portfolio</span></h2>
+  	  <div class="divider"></div>
+      </div>
+  	  <div class="container">
+  	   <div class="card">
+  	  	<div class="card__img">
+  	  		<img src="project.jpg">
+  	    </div>
+  	      <div class="card__title">
+  	  	  <h2>Password Generator</h2>
+          </div>
+          <div class="card__projects-links">
+         <a href="https://github.com/GodYuSuF" target="_BLANK">
+          <i class="fa-brands fa-github"></i>
+         </a>
+         <a href="C:\Users\Argentech\Desktop\GodYuSuF Web\Generador de contraseñas\js\index.html" target="_BLANK">
+          <i class="fa-solid fa-globe"></i>
+         </a>
+         <a href="https://github.com/GodYuSuF/Password-Generator" target="_BLANK">
+          <i class="fa-solid fa-code"></i>
+         </a>
+         </div>
+         <div class="project-details-content">
+          <button class="project-details download-cv">
+            <a href="C:\Users\Argentech\Desktop\GodYuSuF Web\Generador de contraseñas\js\index.html" target="_BLANK">Project Link</a> 	 
+          </button>
+        </div>        
+       </div>
+      </div>
+     </div>
+    </div>
+    
+    <div class="item" id="Contact">
+      <div class="contact">
+      	<div class="contact-headings">
+      	<h2>My <span>contact</span></h2><div class="divider"></div>
+      	</div>
+      	  <div class="container-contact">
+			      <div class="contact-form">
+      		  <h4>Send me a message:</h4>
+      		   <form class="form">
+      			 <input type="text" class="form_input" placeholder="Name">
+      			 <input type="email" class="form_input" placeholder="Email">
+      			 <textarea style="resize: none;"></textarea>
+      			 <button class="btn-submit">Send message</button>
+      			</form>
+      	    </div>
+          </div>  
+      </div>
+    </div>
+
+      <footer class="footer">
+      	<div class="footer-content">
+      		<h2>Agustín Lorenzana</h2>
+      		<h5>Full-stack developer</h5>
+      	</div>
+      	<div class="sotial-network">
+      	  <a href="https://www.instagram.com/aguss_25082/" target="_BLANK">
+      	  	<i class="fa-brands fa-instagram"></i>
+      	  </a>
+      	  <a href="https://www.twitter.com/Agustin70777912" target="_BLANK">
+      	  	<i class="fa-brands fa-twitter"></i>
+      	  </a>
+      	  <a href="https://www.linkedin.com/in/agustin-lorenzana-7b8826264/" target="_BLANK">
+      	  	<i class="fa-brands fa-linkedin-in"></i>
+      	  </a> 
+      	</div>
+      </footer>
+	<script src="codigo.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+     $(document).ready(function(){
+    // Add smooth scrolling to all links
+     $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+      } // End if
+     });
+     });
+    </script>
+</body>
+</html>
