@@ -1,5 +1,3 @@
-let check=document.querySelector(".check");
-check.addEventListener('click', idioma);
 let slider = document.getElementById("myRange");
 let output = document.getElementById("value");
 
