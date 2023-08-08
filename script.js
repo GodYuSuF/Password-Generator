@@ -6,9 +6,9 @@ function idioma(){
   let newURL;
 
     if (currentURL.includes("passwordgenerator")) {
-        newURL = currentURL.replace("passwordgenerator", "generadorcontraseñas");
-    } else if (currentURL.includes("generadorcontraseñas")) {
-        newURL = currentURL.replace("generadorcontraseñas", "passwordgenerator");
+        newURL = currentURL.replace("passwordgenerator", "passwordgeneratores");
+    } else if (currentURL.includes("passwordgeneratores")) {
+        newURL = currentURL.replace("passwordgeneratores", "passwordgenerator");
     }
 
     window.location.href = newURL;
