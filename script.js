@@ -4,9 +4,9 @@ check.addEventListener('click', idioma);
 function idioma(){
   let id=check.checked;
   if(id==true){
-    location.href="C:\Users\Argentech\Desktop\GodYuSuF Web\Password-Generator\es\index.html";
+    location.href="file:///C:/Users/Argentech/Desktop/GodYuSuF%20Web/Password-Generator/es/index.html";
   }else{
-    location.href="C:\Users\Argentech\Desktop\GodYuSuF Web\Password-Generator\index.html";
+    location.href="file:///C:/Users/Argentech/Desktop/GodYuSuF%20Web/Password-Generator/index.html";
   }
 }
 
