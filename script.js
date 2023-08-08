@@ -1,19 +1,5 @@
 let check=document.querySelector(".check");
 check.addEventListener('click', idioma);
-
-function idioma(){
-  let currentURL = window.location.href;
-  let newURL;
-
-    if (currentURL.includes("passwordgenerator")) {
-        newURL = currentURL.replace("passwordgenerator", "passwordgeneratores");
-    } else if (currentURL.includes("passwordgeneratores")) {
-        newURL = currentURL.replace("passwordgeneratores", "passwordgenerator");
-    }
-
-    window.location.href = newURL;
-}
-
 let slider = document.getElementById("myRange");
 let output = document.getElementById("value");
 
