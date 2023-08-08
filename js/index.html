@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Password Generator</title>
+	<link rel="icon" href="GY-icono-web.png">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<nav class="nav">
+			<div class="logo" id="logo">
+				<img src="GY-icono-web.png" alt="GodYuSuF Icon">
+			</div>
+			<div class="idioma">
+				<span class="en" style="color: #16f0ab;">EN</span>
+				<input type="checkbox" class="check">
+				<span class="es" style="color: #fff;">ES</span>
+			</div>
+			<div class="contenedor">
+				<div class="boton">
+					<button>Generate</button>
+				</div>
+				<div class="lenght">
+					<input type="range" id="myRange" min="1" max="100" step="1" value="12" class="slider"></input>
+					<p class="display-pw-size">Password Size: <span id="value">12</span></p>
+				</div>
+				<div class="generator">
+					<input readonly cols="60" rows="1" placeholder="Password Generator" id="generated"></input>
+					<i class="fas fa-copy"></i>
+				</div>
+				<div class="menu">
+				<h1>Avoid being a victim of <span>hacking</span></h1>
+				<h3><br>If you do not contain in your current passwords:</br>
+					<br>- Numbers</br>
+					<br>- Uppercase and Lowercase Letters</br>
+					<br>- Special characters</br>
+					<br>- 12 or more characters</br>
+					<br>The security of your accounts is low.</br> 
+					<br>But don't worry, with this generator, you can get very secure passwords.</br></h3>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+    <script src="script.js"></script>
+	<script src="https://kit.fontawesome.com/c8524fc5ad.js" crossorigin="anonymous"></script>
+</body>
+</html>
