@@ -2,12 +2,16 @@ let check=document.querySelector(".check");
 check.addEventListener('click', idioma);
 
 function idioma(){
-  let id=check.checked;
-  if(id==true){
-    location.href="file:///C:/Users/Argentech/Desktop/GodYuSuF%20Web/Password-Generator/es/index.html";
-  }else{
-    location.href="file:///C:/Users/Argentech/Desktop/GodYuSuF%20Web/Password-Generator/index.html";
-  }
+  let currentURL = window.location.href;
+  let newURL;
+
+    if (currentURL.includes("passwordgenerator")) {
+        newURL = currentURL.replace("passwordgenerator", "generadorcontraseñas");
+    } else if (currentURL.includes("generadorcontraseñas")) {
+        newURL = currentURL.replace("generadorcontraseñas", "passwordgenerator");
+    }
+
+    window.location.href = newURL;
 }
 
 let slider = document.getElementById("myRange");
