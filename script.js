@@ -4,9 +4,9 @@ check.addEventListener('click', idioma);
 function idioma(){
   let id=check.checked;
   if(id==true){
-    location.href="file:///C:/Users/Argentech/Desktop/GodYuSuF%20Web/Generador%20de%20contraseñas/es/index.html";
+    location.href="C:\Users\Argentech\Desktop\GodYuSuF Web\Password-Generator\es\index.html";
   }else{
-    location.href="file:///C:/Users/Argentech/Desktop/GodYuSuF%20Web/Generador%20de%20contraseñas/js/index.html";
+    location.href="C:\Users\Argentech\Desktop\GodYuSuF Web\Password-Generator\index.html";
   }
 }
 
