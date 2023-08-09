@@ -6,7 +6,7 @@
 }
 
 header {
-    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(hacker.png);
+    background: linear-gradient(rgb(47 61 97 / 75%), rgb(33 44 70 / 75%)), url(hacker.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
