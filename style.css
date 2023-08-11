@@ -42,6 +42,7 @@ header {
 .menu h1 {
     font-size: 27px;
     color: #fff;
+    margin: 15px;
 }
 
 span {
@@ -51,6 +52,7 @@ span {
 .menu h3 {
     font-size: 14px;
     color: #fff;
+    margin: 15px;
 }
 
 .generator {

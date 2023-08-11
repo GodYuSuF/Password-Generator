@@ -3,15 +3,26 @@ let output = document.getElementById("value");
 
 output.innerHTML = slider.value;
 
-slider.oninput = function() {
-    output.innerHTML = this.value;
-}
-
-slider.addEventListener("mousemove", function(){
-    let x = slider.value;
+// Función para actualizar el valor y estilo de la barra en respuesta al movimiento táctil
+function updateSlider(x) {
+    output.innerHTML = x;
     let color = 'linear-gradient(90deg, rgb(22,240,171) ' + x + '%, rgb(255,255,255) ' + x + '%)';
     slider.style.background = color;
-})
+}
+
+slider.addEventListener("input", function() {
+    updateSlider(this.value);
+});
+
+slider.addEventListener("touchmove", function(event) {
+    // Obtener posición táctil relativa al elemento
+    let touch = event.touches[0];
+    let x = touch.clientX - slider.getBoundingClientRect().left;
+    
+    // Calcular porcentaje y actualizar
+    let percent = (x / slider.offsetWidth) * 100;
+    updateSlider(percent);
+});
 
 const passwordLengthElement = document.getElementById("myRange");
 const generatedPasswordElement = document.getElementById("generated");
